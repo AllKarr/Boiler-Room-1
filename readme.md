@@ -56,7 +56,7 @@ Core dependencies:
 
 ---
 
-<h1> Step 1 </h1> - Landing Page (/)
+<h3> Step 1 - Landing Page (/) </h3>
 
 * Open the site without the referral:
     ```bash
@@ -72,7 +72,7 @@ Core dependencies:
 
 ---
 
-Step 2 - Registration Page (/register)
+<h3> Step 2 - Registration Page (/register) </h3>
 
 * Go to:
     ```bash
@@ -89,7 +89,7 @@ Step 2 - Registration Page (/register)
 
 ---
 
-Step 3 - Submit Registration
+<h3> Step 3 - Submit Registration </h3>
 
 * Fill out the form with name + email.
 * After submission, you’ll see confirmation:
