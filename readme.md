@@ -95,5 +95,5 @@ Core dependencies:
 * After submission, you’ll see confirmation:
     ```bash
     ✅ Thanks for registering, Bob (bob@email.com)
-    You were referred by: Alice
+    You were referred by: Gandalf
     ```
