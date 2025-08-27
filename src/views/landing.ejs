@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Landing</title>
+</head>
+<body>
+  <h1>🌟 Welcome to Our Product!</h1>
+  <p>This is the landing page. You can register to get started.</p>
+
+  <% if (referrer) { %>
+    <p>👤 You were referred by: <strong><%= referrer %></strong></p>
+  <% } else { %>
+    <p>No referral detected.</p>
+  <% } %>
+
+  <a href="/register">Go to Register</a>
+</body>
+</html>

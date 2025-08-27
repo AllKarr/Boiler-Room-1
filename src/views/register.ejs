@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+</head>
+<body>
+  <h1>📝 Register</h1>
+
+  <form method="POST" action="/register">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <p>
+    <% if (referrer && referrer !== "anonymous") { %>
+      You were referred by: <strong><%= referrer %></strong>
+    <% } else { %>
+      No referral detected.
+    <% } %>
+  </p>
+</body>
+</html>
