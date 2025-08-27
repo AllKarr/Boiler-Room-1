@@ -13,7 +13,10 @@ declare module "express-session" {
   }
 }
 
+
 const app = express();
+
+
 
 // Middleware
 app.use(express.json());
@@ -27,10 +30,16 @@ app.use(
     cookie: { maxAge: 1000 * 60 * 60 * 24 } // 1 day
   })
 );
+console.log("Views dir:", path.join(__dirname, "views"));
+console.log("Public dir:", path.join(__dirname, "../public"));
 
 // Setup EJS view engine
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
+
+//CSS
+app.use(express.static(path.join(__dirname, "../public")));
+
 
 // ✅ Landing page
 app.get("/", (req, res) => {
@@ -63,7 +72,7 @@ app.post("/register", (req, res) => {
   `);
 });
 
-const PORT = 4000;
+const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
