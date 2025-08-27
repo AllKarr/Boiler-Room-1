@@ -4,15 +4,23 @@
   <title>Product Landing</title>
 </head>
 <body>
-  <h1>🌟 Welcome to Our Product!</h1>
-  <p>This is the landing page. You can register to get started.</p>
-
-  <% if (referrer) { %>
-    <p>👤 You were referred by: <strong><%= referrer %></strong></p>
-  <% } else { %>
-    <p>No referral detected.</p>
-  <% } %>
-
-  <a href="/register">Go to Register</a>
+  <div class="landing-container">
+    <div class="homepage_intro">
+      <div class="header_container">  
+        <div class="header"> 
+          <h1> Welcome to Our Product!</h1>
+        </div>  
+        <p>This is the landing page. You can register to get started.</p>
+      </div>
+        
+      <% if (referrer) { %>
+        <p>👤 You were referred by: <strong><%= referrer %></strong></p>
+        <% } else { %>
+          <p>No referral detected.</p>
+          <% } %>
+          
+          <a href="/register">Go to Register</a>
+        </div>
+      </div>
 </body>
 </html>
