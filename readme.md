@@ -26,25 +26,25 @@ Core dependencies:
    git clone https://github.com/AllKarr/Boiler-Room-1.git
    cd Boiler-Room-1
 
---
+---
 
 2. **Navigate into the folder**
     ```bash
     cd Boiler-Room-1
 
---
+---
 
 3. **Install dependencies**
     ```bash
     npm install
 
---
+---
 
 4. **Start the dev server**
     ```bash
     npm run dev
 
---
+---
 
 5. **Open in your browser**
     ```bash
@@ -54,7 +54,7 @@ Core dependencies:
 
 ## ⚙️ How the Refferal System Works
 
--- 
+---
 
 1. Step 1 - Landing Page (/)
 
@@ -70,7 +70,7 @@ Core dependencies:
     ```
     -> Saves "Gandalf" as your referrer in session and cookie.
 
---
+---
 
 2. Step 2 - Registration Page (/register)
 
@@ -87,7 +87,7 @@ Core dependencies:
     You were referred by: anonymous
     ```
 
---
+---
 
 3. Step 3 - Submit Registration
 
